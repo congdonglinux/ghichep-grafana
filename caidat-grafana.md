@@ -1,6 +1,18 @@
-﻿#### Các ghi chép về Grafana
+﻿# Các ghi chép về Grafana
 
-### Cài đặt grafana
+***
+## Cài đặt grafana 3.x
+***
+- Cài đặt grafana 3.x
+```sh
+wget http://mirror1.net.one.com/grafana/testing/debian/pool/jessie/main/g/grafana/grafana_3.0.0-beta11459429091_amd64.deb
+sudo apt-get install -y adduser libfontconfig
+sudo dpkg -i grafana_3.0.0-beta11459429091_amd64.deb
+```
+
+***
+# 1. Cài đặt và cấu hình grafana
+## 1. Cài đặt grafana
 
 - Môi trường cài đặt
 ```sh
@@ -29,7 +41,10 @@ sudo service grafana-server start
 sudo update-rc.d grafana-server defaults 95 10
 ```
 
-##### Cấu hình cho zabbix
+# 2. Các cấu hình đối với Graylog
+***
+
+## 2.1. Cấu hình cho zabbix
 
 ```sh
 Tham khảo: https://github.com/alexanderzobnin/grafana-zabbix
